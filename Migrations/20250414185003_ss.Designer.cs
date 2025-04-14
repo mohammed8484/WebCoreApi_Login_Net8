@@ -12,8 +12,8 @@ using WebCoreApi_Login_Net8.Models;
 namespace WebCoreApi_Login_Net8.Migrations
 {
     [DbContext(typeof(mydbcontext))]
-    [Migration("20250413082049_in1")]
-    partial class in1
+    [Migration("20250414185003_ss")]
+    partial class ss
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
