@@ -10,7 +10,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 //builder.Services.AddDbContext<mydbcontext>(e => e.UseSqlServer(builder.Configuration.GetConnectionString("loginApi")));
-builder.Services.AddDbContext<mydbcontext>(options =>
+builder.Services.AddDbContext<mydbcontext>( options =>
     options.UseInMemoryDatabase("TestDb"));
 var app = builder.Build();
 

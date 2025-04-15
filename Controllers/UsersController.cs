@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using WebCoreApi_Login_Net8.Models;
-using Microsoft.AspNetCore.Mvc;
 
 namespace WebCoreApi_Login_Net8.Controllers
 {
