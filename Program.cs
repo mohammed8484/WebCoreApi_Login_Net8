@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using WebCoreApi_Login_Net8.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,11 +15,16 @@ builder.Services.AddDbContext<mydbcontext>( options =>
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
+
+if (app.Environment.IsDevelopment() || true) // <-- ضع true مؤقتًا لعرض Swagger دائماً
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
 
 app.UseAuthorization();
 
